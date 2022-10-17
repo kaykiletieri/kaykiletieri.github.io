@@ -1,3 +1,5 @@
+alert("Estou em desenvolvimento, volte mais tarde!")
+
 //Header
 const btnMobile = document.getElementById('btn-mobile');
 
