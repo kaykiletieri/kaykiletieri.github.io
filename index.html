@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta name="author" content="Kayki Letieri"> 
-    <meta name="description" content="Meu portifólio">
-    <meta name="keywords" content="HTML, CSS, JavaScript"> 
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kayki Letieri</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Kayki Letieri</title>
+    <meta name="author" content="Kayki Letieri"> 
+    <meta name="description" content="Meu portifólio">
+    <meta name="keywords" content="HTML, CSS, JavaScript"> 
 
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+<!--Header-->
+<header class="header">
+    <a class="logo" href="#">LOGO</a>
+    <nav class="header__nav">
+        <button class="header__btn" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="header__menu" aria-expanded="false">
+            <span class="header__hamburger"></span>
+        </button>
+        <ul class="header__menu" role="menu">
+            <li><a class="header__link" href="#">Link</a></li>
+            <li><a class="header__link" href="#">Link</a></li>
+            <li><a class="header__link" href="#">Link</a></li>
+        </ul>
+    </nav>
+</header>
+
     <script src="./script.js"></script>
 </body>
 </html>
