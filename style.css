@@ -120,6 +120,7 @@ section {
 
 .home__article,
 .home__figure {
+    display: block;
     width: 50%;
     height: 100%;
 }
@@ -129,6 +130,11 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.home__titulo {
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .home__titulo::after {
@@ -150,4 +156,14 @@ section {
 
 .home__figure {
     background-color: blue;
+}
+
+@media (max-width: 600px) {
+    .home__article {
+        width: 100%;
+    }
+
+    .home__figure {
+        display: none;
+    }
 }
