@@ -4,13 +4,19 @@
     text-decoration: none;
 }
 
+section {
+    padding: 24px;
+}
+
 /*Header*/
 .header {
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    width: 100%;
     height: 70px;
     background-color: #e7e7e7;
 }
@@ -103,4 +109,45 @@
         transform: rotate(-135deg);
         top: -7px;
     }
+}
+
+/*Home*/
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.home__article,
+.home__figure {
+    width: 50%;
+    height: 100%;
+}
+
+.home__article {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home__titulo::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.home__figure {
+    background-color: blue;
 }
