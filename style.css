@@ -1,13 +1,24 @@
-.logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-decoration: none;
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 header,
 section,
 footer {
     padding: 24px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 /*Header*/
@@ -38,6 +49,11 @@ footer {
     padding: .5rem;
     text-decoration: none;
 }
+
+.header__link.--active {
+    color: red;
+    transition: 0.5s ease-out;
+  }
 
 @media (max-width: 600px) {
     .header__btn {
@@ -113,12 +129,6 @@ footer {
 }
 
 /*Home*/
-.home {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-}
-
 .home__article,
 .home__figure {
     display: block;
